@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {Helmet} from "react-helmet";
+
 import mainVideo from "./media/welcome.mp4";
 // import mainVideo1 from "./media/1433147584.mp4";
 // import mainVideo2 from "./media/1521167211.mp4";
@@ -20,6 +22,11 @@ class Home extends Component {
   render() {
     return (
       <div>
+                    <Helmet>
+                <meta charSet="utf-8" />
+                <title>My Title</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
         <section className="video-background">
           <div className="videotag">
             <video autoPlay loop playsInline muted>
